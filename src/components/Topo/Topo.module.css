@@ -1,0 +1,60 @@
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.topo picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+}
+
+.topo nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.topo nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.topo nav a:hover {
+    background-color: #420a18;
+    color: #ffc117;
+    border-radius: 5px;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .topo picture {
+        max-width: 80px;
+        margin-bottom: 0;
+    }
+
+    .topo nav a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.secao_capa {
+    background-image: url('../../../public/bannerSapatos.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 700px;
+    text-align: right;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto h2 {
+    font-size: 46px;
+    color:#9c0a2e;
+    margin-bottom: 10px;
+    font-family: "Libre Barskeville", serif;
+}
+
+.texto h1 {
+    font-size: 65px;
+    color: #f7285c;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto h2 {
+        font-size: 36px;
+    }
+
+    .texto h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto h2 {
+        font-size: 28px;
+    }
+
+    .texto h1 {
+        font-size: 32px;
+    }
+}
