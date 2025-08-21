@@ -13,6 +13,6 @@ img {
     object-fit: cover;
 }
 
-.center {
-    
+section {
+    scroll-margin-top: 100px;
 }
